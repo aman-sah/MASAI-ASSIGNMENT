@@ -2,210 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Store</title>
+    <title>The Souled Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            background-color: #f8f8f8;
-        }
-        
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: white;
-            padding: 10px 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .navbar .logo img {
-            height: 40px;
-        }
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-        }
-        .nav-links li {
-            position: relative;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            font-size: 14px;
-            padding: 10px;
-        }
-        .nav-links a:hover {
-            color: red;
-        }
-        .nav-links .dropdown {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: white;
-            display: none;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .nav-links li:hover .dropdown {
-            display: block;
-        }
-        .dropdown a {
-            display: block;
-            padding: 10px;
-            width: 150px;
-        }
-        .icons {
-            display: flex;
-            gap: 15px;
-        }
-        .icons i {
-            font-size: 20px;
-            cursor: pointer;
-        }
-        /* Grid and Product Styles */
-        .container {
-            width: 90%;
-            margin: auto;
-            max-width: 1200px;
-            text-align: center;
-        }
-        h2 {
-            margin: 30px 0;
-            font-size: 22px;
-            font-weight: bold;
-        }
-        .grid {
-            display: grid;
-            gap: 15px;
-            justify-content: center;
-        }
-        .bestsellers, .categories, .shop-themes {
-            grid-template-columns: repeat(3, 1fr);
-        }
-        .image-card {
-            background: white;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-        .image-card img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .image-card p {
-            margin-top: 10px;
-            font-weight: bold;
-            font-size: 14px;
-        }
-        .why-choose-us img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .membership {
-            background: black;
-            color: white;
-            padding: 30px;
-            margin-top: 20px;
-            text-align: center;
-        }
-        .footer {
-            background: red;
-            color: white;
-            padding: 15px;
-            font-size: 14px;
-            font-weight: bold;
-            justify-content: center;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
     <nav class="navbar">
         <div class="logo">
             <img style="height: 100px;" src="https://www.thesouledstore.com/static/img/300x157-twitter.png" alt="Logo">
         </div>
         <ul class="nav-links">
-            <li><a href="#">NOMAD <span style="color: red;">HOT</span></a></li>
-            <li><a href="#">TOPWEAR</a>
-                <div class="dropdown">
-                    <a href="#">T-Shirts</a>
-                    <a href="#">Shirts</a>
-                    <a href="#">Jackets</a>
-                </div>
+            <li>
+                <a href="#">TOPWEAR <i class="fa-solid fa-caret-down"></i></a>
             </li>
-            <li><a href="#">BOTTOMWEAR</a>
-                <div class="dropdown">
-                    <a href="#">Jeans</a>
-                    <a href="#">Joggers</a>
-                </div>
+            <li><a href="#">BOTTOMWEAR <i class="fa-solid fa-caret-down"></i></a>
             </li>
-            <li><a href="#">BESTSELLERS</a>
-                <div class="dropdown">
-                    <a href="#">Jeans</a>
-                    <a href="#">Joggers</a>
-                </div>
+            <li><a href="#">BESTSELLERS <i class="fa-solid fa-caret-down"></i></a>
             </li>
-            <li><a href="#">SNEAKERS</a>
-                <div class="dropdown">
-                    <a href="#">Jeans</a>
-                    <a href="#">Joggers</a>
-                </div>
+            <li><a href="#">SNEAKERS <i class="fa-solid fa-caret-down"></i></a>
             </li>
-            <li><a href="#">COLLECTIONS</a>
-                <div class="dropdown">
-                    <a href="#">Jeans</a>
-                    <a href="#">Joggers</a>
-                </div>
+            <li><a href="#">SPECIAL PRICES</a>
             </li>
-            <li><a href="#">ACCESSORIES <span style="color: red;">NEW</span></a>
-                <div class="dropdown">
-                    <a href="#">Jeans</a>
-                    <a href="#">Joggers</a>
-                </div>
+            <li><a href="#">COLLECTIONS <i class="fa-solid fa-caret-down"></i></a>
             </li>
-            <li><a href="#">THEMES</a>
-                <div class="dropdown">
-                    <a href="#">Jeans</a>
-                    <a href="#">Joggers</a>
-                </div>
+            <li><a href="#">ACCESSORIES <i class="fa-solid fa-caret-down"></i></a>
+            </li>
+            <li><a href="#">THEMES <i class="fa-solid fa-caret-down"></i></a>
             </li>
             <li><a href="#">MEMBERSHIP</a>
-                <div class="dropdown">
-                    <a href="#">Jeans</a>
-                    <a href="#">Joggers</a>
-                </div>
+                
             </li>
         </ul>
         <div class="icons">
-            <i class="fa fa-search"></i>
-            <i class="fa fa-user"></i>
-            <i class="fa fa-heart"></i>
+            <i class="fa fa-search"></i><br>
+            <i class="fa fa-user"></i><br>
+            <i class="fa fa-heart"></i><br>
             <i class="fa fa-shopping-bag"></i>
         </div>
     </nav>
 
+    <!-- Main Content -->
     <div class="container">
         <h2>SOULFUL BESTSELLERS</h2>
         <div class="grid bestsellers">
             <div class="image-card">
                 <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1740999893_4067485.jpg?format=webp&w=360&dpr=1.6" alt="Women Low Top Sneakers">
-                <p>Women Low Top Sneakers</p>
+                <div style="text-align: left;">
+                    <h3>Textured Tshirt: Garfield</h3>
+                    <p style="font-weight: lighter;">Women Oversized T-shirts</p>
+                    <p style="font-weight: lighter;">₹ 899</p>
+                </div>
+            </div>
+
+            <div class="image-card">
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1740802219_8633061.jpg?format=webp&w=360&dpr=1.6" alt="Women Low Top Sneakers">
+                <div style="text-align: left;">
+                    <h3>Solids: Rose Pink</h3>
+                    <p style="font-weight: lighter;">Women Tank Tops</p>
+                    <p style="font-weight: lighter;">₹ 399</p>
+                </div>
             </div>
             <div class="image-card">
-                <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1740802219_8633061.jpg?format=webp&w=360&dpr=1.6" alt="Stylish Oversized Tee">
-                <p>Stylish Oversized Tee</p>
-            </div>
-            <div class="image-card">
-                <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741345234_2786880.jpg" alt="Minimalist Cotton Tee">
-                <p>Minimalist Cotton Tee</p>
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1739517074_6307925.jpg?format=webp&w=360&dpr=1.6" alt="Women Low Top Sneakers">
+                <div style="text-align: left;">
+                    <h3>Textured Shirt: Hunter Green</h3>
+                    <p style="font-weight: lighter;">Women Shirts</p>
+                    <p style="font-weight: lighter;">₹ 1299</p>
+                </div>
             </div>
         </div>
 
@@ -223,6 +86,32 @@
                 <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Bottomwear_copy_QURrxic.jpg" alt="Bottomwear">
                 <p>Bottomwear</p>
             </div>
+            <div class="image-card">
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Shirts_copy_1_A6BCYFA.jpg?format=webp&w=480&dpr=1.6" alt="Bottomwear">
+                <p>Shirts</p>
+            </div>
+            <div class="image-card">
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/sneakers_copy_S2Qrmtv.jpg?format=webp&w=480&dpr=1.6" alt="Bottomwear">
+                <p>Sneakers</p>
+            </div>
+            <div class="image-card">
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Accessories_copy_1_pQZqjsh.jpg?format=webp&w=480&dpr=1.6" alt="Bottomwear">
+                <p>Assessories</p>
+            </div>
+        </div>
+
+
+        <h2>SHOP BY FIT</h2>
+        <div class="grid categories">
+            <div class="image-card">
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/collection-tile-fit2.jpg?format=webp&w=480&dpr=1.6" alt="Tops">
+            </div>
+            <div class="image-card">
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/collection-tile-fit-copy-4_8eZ1FRP.jpg?format=webp&w=480&dpr=1.6" alt="T-Shirts">
+            </div>
+            <div class="image-card">
+                <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/relaxed-fit-tile.jpg?format=webp&w=480&dpr=1.6" alt="Bottomwear">
+            </div>
         </div>
 
         <h2>WHY CHOOSE US?</h2>
@@ -231,14 +120,15 @@
         </div>
 
         <div class="membership">
-            <h2>MEMBERSHIP PERKS</h2>
-            <p>Big Discounts | Early Access | Priority Shipping | Birthday Discount</p>
-            <a href="#">CLICK TO KNOW MORE</a>
+            <img src="/08Assignment/Screenshot 2025-03-08 185647.png" alt="">
         </div>
     </div>
 
     <div class="footer" style="text-align: center;">
-        HOMEGROWN INDIAN BRAND - Over 6 Million Happy Customers
+        HOMEGROWN INDIAN BRAND
+    </div>
+    <div style="background-color: white; color: black; height: 40px;text-align: center; font-weight: bold;">
+        Over 6 Million Happy Customers
     </div>
     
 
