@@ -1,0 +1,9 @@
+/* Descendant combinator: All <p> inside <div> will be blue */
+.container p {
+    color: blue;
+}
+
+/* Child combinator: Only the direct child <p> of <div> will be bold */
+.container > p {
+    font-weight: bold;
+}

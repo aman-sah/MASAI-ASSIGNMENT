@@ -1,0 +1,71 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #222;
+    padding: 20px;
+}
+
+/* Section Styling */
+.section {
+    text-align: center;
+}
+
+/* Styling direct links differently using child combinator */
+.section > a {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Different colors for each section using descendant combinator */
+.section1 a {
+    color: blue;
+}
+
+.section2 a {
+    color: green;
+}
+
+.section3 a {
+    color: orange;
+}
+
+/* Nested links should have a lighter color */
+.submenu a {
+    color: gray;
+    font-style: italic;
+}
+
+/* Hover effects */
+.section a:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Active state when clicked */
+.section a:active {
+    color: yellow;
+}
+
+/* Special styling for external links (high specificity) */
+.section a[href^="https"] {
+    color: red !important;
+    text-decoration: underline;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,45 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center and space the boxes */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;  /* Adds spacing between the boxes */
+    padding: 20px;
+}
+
+/* Fix the box positioning */
+.box {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    position: relative; /* Removed absolute positioning */
+}
+
+/* Fix the paragraph position */
+.text {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    background: yellow;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Make it responsive */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
