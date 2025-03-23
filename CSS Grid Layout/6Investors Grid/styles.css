@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.investor-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.investor-card:hover {
+    transform: scale(1.05);
+}
+
+.investor-card img {
+    width: 200px;
+    height: 200px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.investor-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #222;
+}
+
+.investor-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+#logo {
+    width: 80%;
+    height: 20%;
+    /* border-radius: 50%; */
+    /* object-fit: cover; */
+    background-position: center;
+    /* margin-bottom: 10px; */
+}

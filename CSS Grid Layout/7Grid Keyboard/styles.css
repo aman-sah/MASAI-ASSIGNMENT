@@ -1,0 +1,33 @@
+body {
+    background-color: #80c4ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.keyboard-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    background: #111;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.key {
+    background: #222;
+    color: #4fc3f7;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    box-shadow: inset 0 -3px #000;
+}
+
+.space {
+    grid-column: span 5;
+}
