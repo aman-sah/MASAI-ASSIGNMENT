@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Ensures space between logo and links */
+    align-items: center; /* Aligns items vertically */
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .links {
+    display: flex;
+    gap: 20px; /* Ensures even spacing between links */
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+  }
+  
