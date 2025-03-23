@@ -1,0 +1,51 @@
+/* Base Styles - Mobile First (default for screens < 600px) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Set font size and line height for smaller screens */
+h1 {
+    font-size: 18px;
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* For larger screens (> 600px) */
+@media (min-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+}
+
+/* For even larger screens (> 1024px) */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 70%;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 2;
+    }
+}
