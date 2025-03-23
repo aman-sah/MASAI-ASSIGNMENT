@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Properties</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Mastering CSS Display Properties</h1>
+
+    <h2>Block Element</h2>
+    <div class="block-element">This is a block element</div>
+
+    <h2>Inline Element</h2>
+    <span class="inline-element">This is an inline element</span> <span>Next to it!</span>
+
+    <h2>Inline-Block Element</h2>
+    <div class="inline-block-element">This is an inline-block element</div>
+    <div class="inline-block-element">Another inline-block</div>
+
+    <h2>None (Hidden) Element</h2>
+    <button onclick="toggleElement()">Toggle Hidden Element</button>
+    <div class="hidden-element" id="hidden-element">This element can be toggled</div>
+
+    <script>
+        function toggleElement() {
+            let element = document.getElementById("hidden-element");
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

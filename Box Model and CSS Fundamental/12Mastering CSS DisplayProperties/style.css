@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.block-element {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: lightblue;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.inline-element {
+    display: inline;
+    background-color: lightcoral;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.inline-block-element {
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+    background-color: lightgreen;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+.hidden-element {
+    display: none;
+    padding: 10px;
+    background-color: gray;
+    border: 2px solid black;
+    margin-top: 10px;
+}
